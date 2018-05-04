@@ -1,0 +1,10 @@
+name: Account Settings Email Attachment
+description: Attach File For Account Settings
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+  - mimemail:mimemail
+configure: account_settings_email_attachment.settings

@@ -1,0 +1,7 @@
+account_settings_email_attachment.settings:
+  path: '/admin/config/system/account_settings_email_attachment'
+  defaults:
+    _form: 'Drupal\account_settings_email_attachment\Form\AdminForm'
+    _title: 'Account settings email extension'
+  requirements:
+    _permission: 'administer account settings email attachment perm'
