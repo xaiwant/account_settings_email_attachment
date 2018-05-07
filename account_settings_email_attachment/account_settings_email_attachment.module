@@ -127,9 +127,9 @@ function account_settings_email_attachment_mail_attachment($fid) {
   $file = File::load( $fid);
 
   $attachment = array(
-    'filecontent' => file_get_contents($file->uri),
-    'filename' => $file->filename,
-    'filemime' => $file->filemime,
+    'filecontent' => file_get_contents($file->getFileUri()),
+    'filename' => $file->getFilename(),
+    'filemime' => $file->getMimeType(),
   );
 
   return $attachment;
